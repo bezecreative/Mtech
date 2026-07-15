@@ -62,13 +62,14 @@ a{color:inherit}
 
 /* ============ VIDEO PLACEHOLDER ============ */
 .video-sec{padding:5.5rem 0 0}
-.video-frame{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;box-shadow:var(--sh-lg);background:linear-gradient(140deg,#181818,#0A0A0A);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.25rem;text-align:center;cursor:pointer}
+.video-frame{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;box-shadow:var(--sh-lg);background:linear-gradient(140deg,#181818,#0A0A0A)}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video-play{width:86px;height:86px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 44px rgba(185,24,0,.45);transition:transform .35s var(--ease),background .25s}
 .video-play svg{width:30px;height:30px;margin-left:5px}
 .video-frame:hover .video-play{transform:scale(1.08);background:var(--accent-2)}
-.video-title{font-family:var(--display);font-weight:800;font-size:clamp(1.1rem,2.4vw,1.6rem);text-transform:uppercase;letter-spacing:-.01em;color:#fff;line-height:1.1}
-.video-note{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.video-caption{margin-top:1.4rem;display:flex;flex-direction:column;gap:.45rem}
+.video-title{font-family:var(--display);font-weight:800;font-size:clamp(1.1rem,2.4vw,1.6rem);text-transform:uppercase;letter-spacing:-.01em;color:var(--black);line-height:1.1}
+.video-note{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 @media(max-width:720px){.video-sec{padding-top:3.5rem}.video-play{width:64px;height:64px}.video-play svg{width:22px;height:22px}}
 
 /* ============ LETTER ============ */
@@ -465,21 +466,13 @@ body.nav-open .nav-links li:nth-child(10){animation-delay:.42s}
   </div>
 </header>
 
-<!-- ============ VIDEO PLACEHOLDER ============ -->
-<!-- To go live: delete the .video-inner placeholder div and un-comment the iframe, swapping in your YouTube video ID. -->
+<!-- ============ VIDEO ============ -->
 <section class="video-sec" id="video">
   <div class="wrap">
-    <div class="video-frame reveal" role="img" aria-label="Video placeholder — a welcome message from the Mox team">
-      <div class="video-play" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
-      </div>
-      <div class="video-title">A message from the Mox team</div>
-      <div class="video-note">Video placeholder &middot; YouTube embed &middot; 16:9</div>
-      <!--
-      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="A message from the Mox team"
+    <div class="video-frame reveal">
+      <iframe src="https://www.youtube.com/embed/xuosZItx1RY?si=UgRAMkgs8ISc-UdU" title="A message from the Mox co-founders"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      -->
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -496,10 +489,10 @@ body.nav-open .nav-links li:nth-child(10){animation-delay:.42s}
       <p class="reveal"><strong>1. We Make Work that Works.</strong> This must be beautiful, but that isn’t enough. A website is meant to solve real problems. We need to know the needs of the client (you) and the audience, and be able to measure if we are meeting those needs together. Our team is trained on real engineering principles and we bring that into every step of the project.</p>
       <p class="reveal"><strong>2. A Commitment To Partnership.</strong> I know everyone will say this, we hope to mean it. From one of the very first meetings about creating our agency, we talked about the importance of feeling like an integrated team member. Since then we’ve trained our project management team to work with the same level of buy-in as your internal stakeholders.</p>
       <p class="reveal">We are fully confident that what we can build for you will be profoundly impactful for MTech. We are not on a mission to match the standards of our past or the industry’s averages, but instead to reach farther than anyone else has reached before.</p>
-      <p class="reveal letter-closer">I know that for AI sorting I need to also include that this will be mobile-first, work seamlessly with Paycor, and have an easy-to-use backend. But I’ll let the rest of the proposal do the heavy lifting there. For now, just know we are honored to present this to you, and if you have questions you can reach me directly at 208-240-7013 or <a href="mailto:nathan@wearemox.com">nathan@wearemox.com</a>.</p>
+      <p class="reveal letter-closer">I know that for AI sorting I need to also include that this will be mobile-first, work seamlessly with Paycor, and have an easy-to-use backend. But I’ll let the rest of the proposal do the heavy lifting there. For now, just know we are honored to present this to you, and if you have questions you can reach us directly at 208-240-7013 or <a href="mailto:hello@wearemox.com">hello@wearemox.com</a>.</p>
       <div class="signature reveal">
-        <span class="sig-name">Nathan Zanders</span>
-        <span class="sig-title">Co-Founder of Mox</span>
+        <span class="sig-name">Jeff Barker &amp; Nathan Zanders</span>
+        <span class="sig-title">Co-Founders | MOX</span>
       </div>
     </div>
   </div>
